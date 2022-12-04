@@ -1,0 +1,24 @@
+print("Welcome to the love calculator")
+name_1=input("Enter your name?\n")
+name_2=input("Enter their name?\n")
+combined_string=name_1+name_2
+lowercase_string=combined_string.lower()
+t = lowercase_string.count("t")
+r = lowercase_string.count("r")
+u = lowercase_string.count("u")
+e = lowercase_string.count("e")
+true=t + r + u + e
+l = lowercase_string.count("l")
+o = lowercase_string.count("o")
+v = lowercase_string.count("v")
+e = lowercase_string.count("e")
+love=l + o + v + e
+love_score=str(true)+str(love)
+int_score=int(love_score)
+print(love_score)
+if int_score<10 or int_score >90:
+    print(f"your score is {int_score},you go togther like coke and mentos.")
+elif int_score <= 40 and int_score >= 50:
+    print(f"your score is {int_score},you are alright together")
+else:
+    print(f"your score is {int_score}")
